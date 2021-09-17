@@ -14,32 +14,20 @@
     <!--主页头部横幅栏 -->
     <div class="header">
         <img class="header-img" src="./picture/logo2.png" alt="凡失logo">
-        <!-- <header role="banner">
-            <img src="./picture/logo2.png" width="30" height="25">
-            <label
-                class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
-                <input type="text"
-                    class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
-                    data-hotkey="s,/" name="q" data-test-selector="nav-search-input" placeholder="输入按下回车键进行搜索..."
-                    data-unscoped-placeholder="输入按下回车键进行搜索..." data-scoped-placeholder="输入按下回车键进行搜索..."
-                    autocapitalize="off" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-                    aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search or jump to…"
-                    data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" spellcheck="false"
-                    autocomplete="off">
-
-            </label>
-
-            <nav class="d-flex flex-column flex-md-row flex-self-stretch flex-md-self-auto" aria-label="Global">
-
-                <div class="d-flex position-relative">
-                    <p
-                        class="js-selected-navigation-item Header-link flex-auto mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade">
-                        醉卧不知天在水，满床清梦压星河
-                    </p>
-                </div>
-
-            </nav>
-        </header> -->
+        <form class="header-form" onsubmit="return false">
+        <label>
+            <input type="text"
+                class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                data-test-selector="nav-search-input" placeholder="输入按下回车键进行搜索..."
+                data-unscoped-placeholder="输入按下回车键进行搜索..." data-scoped-placeholder="输入按下回车键进行搜索..." autocapitalize="off"
+                role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-autocomplete="list"
+                aria-controls="jump-to-results" aria-label="Search or jump to…"
+                data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" spellcheck="false"
+                autocomplete="off">
+    
+        </label>
+        </form>
+        <i class="header-sentence">醉卧不知天在水，满床清梦压星河</i> 
     </div>
 
 

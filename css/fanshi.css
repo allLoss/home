@@ -6,9 +6,41 @@
 }
 
 .header-img {
-   width: 30px;
-   height: 25px;
-   top: 30%;
-   left: 5%;
-   position: relative;
+    width: 30px;
+    height: 25px;
+    top: 25px;
+    left: 60px;
+}
+
+.header-form {
+    display: inline;
+    top: 25px;
+    left: 100px;
+}
+
+.header-sentence {
+    font-size: 40px;
+    left: 50%;
+    margin-left: -150px;
+    background-image: -webkit-linear-gradient(left, blue, #66ffff 10%, #cc00ff 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CC00CC 70%, #CC00FF 80%, #66FFFF 90%, blue 100%);
+    -webkit-text-fill-color: transparent;
+    /* 将字体设置成透明色 */
+    -webkit-background-clip: text;
+    /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;
+}
+
+.header-img, .header-form, .header-sentence {
+    position: absolute;
+}
+
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
 }
