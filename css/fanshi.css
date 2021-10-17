@@ -1,8 +1,15 @@
-.header {
+.header, .navigation {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.header {
     height: 62px;
     background-color: #24292f;
+}
+
+.header-img, .header-form, .header-sentence {
+    position: absolute;
 }
 
 .header-img {
@@ -19,21 +26,16 @@
 }
 
 .header-sentence {
-    font-size: 40px;
-    left: 50%;
-    margin-left: -150px;
-    background-image: -webkit-linear-gradient(left, blue, #66ffff 10%, #cc00ff 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CC00CC 70%, #CC00FF 80%, #66FFFF 90%, blue 100%);
+    font-size: 30px;
+    left: 40%;
+    top: 15px;
+    background-image: -webkit-linear-gradient(left, #00ffff, #66ffff 10%, #CCCCFF 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CCCCFF 70%, #CCCCFF 80%, #66FFFF 90%, #00ffff 100%);
     -webkit-text-fill-color: transparent;
     /* 将字体设置成透明色 */
     -webkit-background-clip: text;
     /* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
-    -webkit-background-size: 200% 100%; 
+    -webkit-background-size: 200% 100%;
     -webkit-animation: masked-animation 4s linear infinite;
-    font-size: 35px;
-}
-
-.header-img, .header-form, .header-sentence {
-    position: absolute;
 }
 
 @keyframes masked-animation {
@@ -43,4 +45,69 @@
     100% {
         background-position: -100% 0;
     }
+}
+
+.navigation {
+    height: 50px;
+    background-color: #f6f8fa;
+}
+
+.navigation-div-position {
+    position: relative;
+    left: 32px;
+}
+
+.content {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.content-grid {
+    padding-left: 30%;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.content-div {
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    height: 200px;
+    cursor: pointer;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+.content-div:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+.content-div-H5 {
+    text-align: center;
+}
+
+.content-div-p {
+    font-size: small;
+    padding-left: 5px;
+}
+
+/* 标签类 */
+
+a {
+    color: #0044ff;
+}
+
+a:link {
+    text-decoration: none;
 }
