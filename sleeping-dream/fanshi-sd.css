@@ -1,0 +1,11 @@
+.dispaly {
+    display: block;
+}
+
+.mouse-hand {
+    cursor: pointer;
+}
+
+section p {
+    text-indent: 2em;
+}
