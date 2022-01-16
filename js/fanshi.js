@@ -11,5 +11,16 @@ for (let e of content_divs) {
         window.location.href = url + targetPath;;
 
     }
+    
 
 }
+
+
+
+
+
+
+
+
+
+
